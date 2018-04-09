@@ -1,5 +1,5 @@
 
-# HOW TO INSTALL GRUB USING CHROOT
+# How to install grub2 using chroom on an lvm encrypted partition
 
 #### Get the drive structure ,here Im assuming the boot partition is on /dev/sda1 and the LUKS/LVM encrypted partition is on /dev/sda5
 ```
@@ -46,6 +46,11 @@ fdisk -l /dev/sda/
 ```
 
 #### If all goes well, you should see operating systems detected with the operating systems present
+#### Exit out of chroot
+```
+  exit
+```
+
 #### Then its time to umount things
 ```
   umount /dev/sda1 /mnt/dev/ /mnt/proc/ /mnt/sys/
