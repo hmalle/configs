@@ -45,6 +45,9 @@ set novisualbell
 "add an extrabit of margin to the left
 "set foldcolumn=1
 
+"set folding
+set foldmethod=manual
+
 "enable 256 colors palette in the gnome terminal
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
